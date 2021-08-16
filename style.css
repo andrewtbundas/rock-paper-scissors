@@ -1,0 +1,61 @@
+html{
+    font-family: 'Orbitron', sans-serif;
+}
+
+body{
+    margin:0px;
+    background-color: #120458;
+}
+
+#title{
+    background-color: #7a04eb;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+h1{
+    margin:0px;
+    font-size: 72px;
+    color: #fe75fe;
+}
+
+#scoreboard{
+    text-align: center;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#scoreboard div{
+    color: #fe75fe;
+    font-size: 36px;
+}
+
+#buttons {
+    text-align: center;
+}
+
+#buttons button{
+    background-color: #ff124f;
+    width: 200px;
+    font-size: 30px;
+    border: 1px solid white;
+    margin: 25px;
+}
+
+#game-over-screen{
+
+    width:500px;
+    text-align: center;
+    border: 5px solid black;
+    background-color: white;
+    margin:auto;
+    padding:20px;
+}

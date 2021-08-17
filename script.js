@@ -8,6 +8,9 @@ const playButtons = document.querySelectorAll('.play-button')
 const playerScore = document.querySelector('#playerScore')
 const computerScore = document.querySelector('#computerScore')
 
+const gameOverScreen = document.querySelector('#game-over-screen')
+const gameOverHolder = document.querySelector('#game-over-holder')
+
 function computerPlay() {
     return OPTIONS[Math.floor(Math.random() * 3)]
 }
@@ -86,8 +89,25 @@ function checkWinner() {
         computerWins = 0
         scoreUpdate()
 
+        gameOverScreen.classList.add('game-over-screen-on')
+        gameOverHolder.classList.remove('hide')
+
+        restartGame()
+
     }
 
+}
+
+function restartGame() {
+    playAgain = document.querySelector('#play-again');
+
+    playAgain.addEventListener('click', () => {
+        console.log("Play again!")
+        playerWins = 0;
+        computerWins = 0;
+        gameOverScreen.classList.remove('game-over-screen-on');
+        gameOverHolder.classList.add('hide')
+    })
 }
 
 
